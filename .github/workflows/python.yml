@@ -45,4 +45,4 @@ jobs:
         with:
           to: ${{ secrets.TELEGRAM_CHAT_ID }}
           token: ${{ secrets.TELEGRAM_TOKEN }}
-          message: ${{ github.job }} job in workflow ${{ github.workflow }} of ${{ github.repository }} has ${{ job.status }}
+          message: ${{ github.job }} job in workflow ${{ github.workflow }} ${{ matrix.python-version }} of ${{ github.repository }} has ${{ job.status }}
